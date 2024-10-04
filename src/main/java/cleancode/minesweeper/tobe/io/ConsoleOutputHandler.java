@@ -33,8 +33,7 @@ public class ConsoleOutputHandler {
                 .mapToObj(index -> (char) ('a' + index))
                 .map(Object::toString)
                 .toList();
-        String joinedAlphabets = String.join(" ", alphabets);
-        return joinedAlphabets;
+        return String.join(" ", alphabets);
     }
 
     public void printGameWinningComment() {
